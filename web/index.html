@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!-- 必须放在最前面，用于定位资源路径 -->
+  <base href="$FLUTTER_BASE_HREF">
+
+  <meta charset="UTF-8">
+  <meta content="IE=Edge" http-equiv="X-UA-Compatible">
+  <meta name="description" content="CP Match Game">
+
+  <!-- ========================================== -->
+  <!-- 核心修改：iPad/iOS 适配代码 (已移出注释区) -->
+  <!-- ========================================== -->
+  
+  <!-- 1. 禁止用户缩放页面 (防止双击屏幕放大) -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+  <!-- 2. iOS Safari 专用：启用全屏 PWA 模式 (隐藏地址栏) -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="CP Match">
+  
+  <!-- 3. 防止 iOS 自动把数字识别为电话号码 -->
+  <meta name="format-detection" content="telephone=no">
+
+  <!-- ========================================== -->
+
+  <!-- 图标设置 -->
+  <link rel="apple-touch-icon" href="icons/Icon-192.png">
+  <link rel="icon" type="image/png" href="favicon.png"/>
+
+  <title>CP Match</title>
+  <link rel="manifest" href="manifest.json">
+</head>
+<body>
+  <script src="flutter_bootstrap.js" async></script>
+</body>
+</html>
